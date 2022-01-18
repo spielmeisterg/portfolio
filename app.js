@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/public/index.html")
+    res.sendFile("/public/index.html", { root: __dirname })
 });
 
 app.post('/api/world', (req, res) => {
