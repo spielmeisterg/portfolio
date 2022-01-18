@@ -1,4 +1,6 @@
 import React,{Component} from "react"
+import {amArray} from "./data"
+import "./style/header.css"
 
 class Header extends Component{
     constructor(){
@@ -6,7 +8,6 @@ class Header extends Component{
         this.state = {am: "Ian Speelman"}
     }
     componentDidMount(){
-        const amArray = ["Ian Speelman", "a Developer", "awesome", "the best"]
         let i = 0
         setInterval( ()=> {
             this.setState({am: amArray[i]})
@@ -20,7 +21,9 @@ class Header extends Component{
     }
     render(){
         return(
-            <h1>Hi, i am {this.state.am}</h1>
+            <div className="component-container">
+                <h1>Hi, i am <span>{this.state.am}</span></h1>
+            </div>
         )
     }
 }

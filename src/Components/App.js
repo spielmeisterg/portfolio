@@ -1,11 +1,15 @@
 import React, {Component} from "react"
 import Header from "./Header"
+import ProjectContainer from "./ProjectContainer"
 
 class App extends Component{
 
   render(){
     return (
-      <Header />
+      <React.Fragment>
+        <Header />
+        <ProjectContainer />
+      </React.Fragment>
     );
   }
 }

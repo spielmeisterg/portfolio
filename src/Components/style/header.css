@@ -1,0 +1,17 @@
+:root{
+    --secondary-text: red
+}
+body{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+.component-container{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color: var(--secondary-text);
+}
