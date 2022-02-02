@@ -1,15 +1,51 @@
 .project-container{
+    background-color: var(--secondary-background);
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    padding: 5em 0;
 }
 .project-list{
     width: 80%;
     margin: 0 auto;
 }
 .item{
+    background-color: var(--secondary-background-dim);
+    font-family: "amiri";
     display: flex;
+    gap: 5em;
+    margin: 2em 0;
+    padding: 1em;
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: .5em;
+    padding-right: 4em;
+}
+.item img{
+    height: 15vw;
+    width: auto;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    
+}
+@media only screen and(max-width: 100px){
+    .item img{
+        height : 30vw;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .project-list{
+        width: 100%;
+    }
+    .item{
+        flex-direction: column;
+        border-radius: 0;
+        padding: 2em;
+    }
+    .item img{
+        height: 40vw;
+    }
 }
